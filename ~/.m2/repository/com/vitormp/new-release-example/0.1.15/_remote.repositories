@@ -1,4 +1,4 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
 #Tue Mar 27 21:49:23 UTC 2018
-plexus-utils-1.5.6.pom>central=
-plexus-utils-1.5.6.jar>central=
+new-release-example-0.1.15.pom>=
+new-release-example-0.1.15.war>=
