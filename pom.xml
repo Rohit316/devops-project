@@ -10,11 +10,12 @@
 	<name>new-example Maven Webapp</name>
 
 	<scm>
-		<connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
-		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
 		<url>git@github.com:Rohit316/devops-project.git</url>
-          <tag>new-release-example-0.1.15</tag>
-  </scm>
+                <connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
+		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
+		
+              <tag>HEAD</tag>
+        </scm>
 
 	<distributionManagement>
 		<!-- Publish versioned releases here -->
