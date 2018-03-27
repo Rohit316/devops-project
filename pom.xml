@@ -10,9 +10,9 @@
 	<name>new-example Maven Webapp</name>
 
 	<scm>
-		<connection>git@github.com:Rohit316/devops-project.git</connection>
+		<connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
 		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
-		<url>scm:git:git@github.com:Rohit316/devops-project.git</url>
+		<url>git@github.com:Rohit316/devops-project.git</url>
           <tag>new-release-example-0.1.15</tag>
   </scm>
 
