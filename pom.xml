@@ -4,7 +4,7 @@
 
 	<groupId>com.vitormp</groupId>
 	<artifactId>new-release</artifactId>
-	<version>0.1.16-SNAPSHOT</version>
+	<version>0.1.5-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>new-release Maven Webapp</name>
