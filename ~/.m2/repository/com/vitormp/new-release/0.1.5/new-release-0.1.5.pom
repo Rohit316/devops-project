@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.vitormp</groupId>
+	<artifactId>new-release</artifactId>
+	<version>0.1.5</version>
+	<packaging>war</packaging>
+
+	<name>new-release Maven Webapp</name>
+
+	<scm>
+		<url>git@github.com:Rohit316/devops-project.git</url>
+                <connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
+		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
+		
+              <tag>HEAD</tag>
+        </scm>
+
+	<distributionManagement>
+		<!-- Publish versioned releases here -->
+		<repository>
+			<id>nexusreleases</id>
+			<name>maven-releases</name>
+			<url>http://34.208.52.77:8081/nexus/content/repositories/nexusreleases</url>
+		</repository>
+
+		<!-- Publish snapshots here -->
+		<snapshotRepository>
+			<id>nexussnapshots</id>
+			<name>maven-snapshots</name>
+			<url>http://34.208.52.77:8081/nexus/content/repositories/nexussnapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+      <dependencies>
+                <dependency>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                        <version>4.10</version>
+                        <scope>test</scope>
+                </dependency>
+        </dependencies>
+
+	<build>
+		<finalName>new-release</finalName>
+
+		<plugins>
+
+                   <plugin> 
+	                        <groupId>org.apache.maven.plugins</groupId> 
+	                        <artifactId>maven-compiler-plugin</artifactId> 	
+                    <configuration> 
+                      	<source>1.6</source> 
+                      	<target>1.6</target> 
+                    </configuration> 
+              
+                  </plugin>		
+
+        	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+		</plugin>
+
+		</plugins>
+	</build>
+
+	
+</project>
