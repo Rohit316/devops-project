@@ -10,9 +10,9 @@
 	<name>new-release Maven Webapp</name>
 
 	<scm>
-		<connection>git@github.com:Rohit316/devops-project.git</connection>
-		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
-		<url>scm:git:git@github.com:Rohit316/devops-project.git</url>
+		<connection>scm:git:https://github.com/Rohit316/devops-project.git</connection>
+		<developerConnection>scm:git:https://github.com/Rohit316/devops-project.git</developerConnection>
+		<url>scm:git:https://github.com/Rohit316/devops-project.git</url>
           <tag>HEAD</tag>
   </scm>
 
