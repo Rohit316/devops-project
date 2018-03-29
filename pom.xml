@@ -10,9 +10,9 @@
 	<name>new-release Maven Webapp</name>
 
 	<scm>
-		<connection>scm:git:https://github.com/Rohit316/devops-project.git</connection>
-		<developerConnection>scm:git:https://github.com/Rohit316/devops-project.git</developerConnection>
-		<url>scm:git:https://github.com/Rohit316/devops-project.git</url>
+		<connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
+		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
+		<url>git@github.com:Rohit316/devops-project.git</url>
           <tag>HEAD</tag>
   </scm>
 
@@ -20,15 +20,15 @@
 		<!-- Publish versioned releases here -->
 		<repository>
 			<id>nexusreleases</id>
-			<name>releases</name>
-			<url>http://34.208.52.77:8081/nexus/content/repositories/nexusreleases</url>
+			<name>releases-new</name>
+			<url>http://172.17.0.1:8081/nexus/content/repositories/nexusreleases</url>
 		</repository>
 
 		<!-- Publish snapshots here -->
 		<snapshotRepository>
 			<id>nexussnapshots</id>
 			<name>snapshots</name>
-			<url>http://34.208.52.77:8081/nexus/content/repositories/nexussnapshots</url>
+			<url>http://172.17.0.1:8081/nexus/content/repositories/nexussnapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
