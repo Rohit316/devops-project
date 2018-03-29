@@ -4,7 +4,7 @@
 
 	<groupId>com.vitormp</groupId>
 	<artifactId>new-release</artifactId>
-	<version>0.1.7-SNAPSHOT</version>
+	<version>0.1.7</version>
 	<packaging>war</packaging>
 
 	<name>new-release Maven Webapp</name>
@@ -13,7 +13,7 @@
 		<connection>scm:git:git@github.com:Rohit316/devops-project.git</connection>
 		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
 		<url>git@github.com:Rohit316/devops-project.git</url>
-          <tag>HEAD</tag>
+          <tag>new-release-0.1.7</tag>
   </scm>
 
 	<distributionManagement>
