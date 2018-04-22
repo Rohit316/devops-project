@@ -12,7 +12,7 @@
 	<scm>
 		<connection>git@github.com:Rohit316/devops-project.git</connection>
 		<developerConnection>scm:git:git@github.com:Rohit316/devops-project.git</developerConnection>
-		<url>scm:git:git@github.com:Rohit316/devops-project.git</url>
+		<url>git@github.com:Rohit316/devops-project.git</url>
           <tag>HEAD</tag>
   </scm>
 
