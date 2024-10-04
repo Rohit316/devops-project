@@ -1,0 +1,37 @@
+name: Deploy to AWS S3
+
+on:
+  push:
+    branches:
+      - devel
+      - stage
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build application
+      run: npm run build
+
+    - name: Deploy to S3
+      run: |
+        if [[ ${{ github.ref }} == "refs/heads/devel" ]]; then
+          aws s3 sync ./build s3://devel-app-bucket --delete
+        elif [[ ${{ github.ref }} == "refs/heads/stage" ]]; then
+          aws s3 sync ./build s3://stage-app-bucket --delete
+        elif [[ ${{ github.ref }} == "refs/heads/prod" ]]; then
+          aws s3 sync ./build s3://prod-app-bucket --delete
+        fi
